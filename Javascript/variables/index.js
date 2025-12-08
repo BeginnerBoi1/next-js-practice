@@ -46,4 +46,8 @@ console.log("y: " + y);
 
 
 // Changing the text content of HTML elements using DOM manipulation
-document.getElementByID("p1").textContent = "Testtttt";
+document.getElementById("p1").textContent = name;
+document.getElementById("p2").textContent = age;
+document.getElementById("p3").textContent = isStudent;
+document.getElementById("p4").textContent = interests;
+document.getElementById("p5").textContent = crush;
