@@ -43,3 +43,7 @@ y = 30.5;
 console.log("After re-assignment:");
 console.log("x: " + x);
 console.log("y: " + y);
+
+
+// Changing the text content of HTML elements using DOM manipulation
+document.getElementByID("p1").textContent = "Testtttt";
