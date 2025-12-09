@@ -12,6 +12,6 @@ document.getElementById("myButton").onclick = function(){
     username = document.getElementById("myTextbox").value; // get the value of the textbox
     console.log(`Hello ${username}`);
 
-    // change the value of the H1 element
+// change the value of the H1 element
     document.getElementById("myH1").textContent = `Someone changed the title to:  ${username}`;
 }
