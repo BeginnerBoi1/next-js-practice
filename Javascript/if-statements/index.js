@@ -37,11 +37,15 @@ submitBtn.onclick = function() {
     // Payment
     if (visaBtn.checked){
         paymentresult.textContent = "You are paying with Visa"
+        paymentresult.classList.remove("error")
     }else if (paypalBtn.checked){
         paymentresult.textContent = "You are paying with paypal"
+        paymentresult.classList.remove("error")
     }else if (paymeBtn.checked){
         paymentresult.textContent = "You are paying with payMe"
+        paymentresult.classList.remove("error")
     }else{
         paymentresult.textContent = "You must select a payment type!"
+        paymentresult.classList.add("error")
     }
 }
