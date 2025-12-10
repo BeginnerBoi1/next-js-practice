@@ -49,3 +49,13 @@ submitBtn.onclick = function() {
         paymentresult.classList.add("error")
     }
 }
+
+// Ternary operator
+// a shortcut to if() and else statements
+// helps assign a variable based on a condition
+
+// condition ? codeIfTrue : codeIfFalse;
+
+let time = 16
+let greeting = time <= 17  ? "It's day time!" : "It's night time!";
+console.log(greeting)
