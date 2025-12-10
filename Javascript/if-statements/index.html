@@ -4,26 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>if-statements practice</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <!--   .checked property   -->
-    <input type="checkbox" id="subscribeBtn">
-    <label for="subscribeBtn">Subscribe</label>
-    <br>
-    <input type="radio" id="visaBtn">
-    <label for="visaBtn">Visa</label>
-    <br>
-    <input type="radio" id="paypalBtn">
-    <label for="paypalBtn">Paypal</label>
-    <br>
-    <input type="radio" id="paymeBtn">
-    <label for="paymeBtn">PayMe</label>
-    <br>
+    <div class="container">
+        <h1>Subscription & Payment Form</h1>
+        
+        <div class="section">
+            <div class="section-title">Subscription</div>
+            <div class="options-group">
+                <div class="option-item">
+                    <input type="checkbox" id="subscribeBtn">
+                    <label for="subscribeBtn">Subscribe</label>
+                </div>
+            </div>
+        </div>
 
-    <button id="submitBtn">Submit</button>
+        <div class="section">
+            <div class="section-title">Payment Method</div>
+            <div class="options-group">
+                <div class="option-item">
+                    <input type="radio" id="visaBtn" name="payment">
+                    <label for="visaBtn">Visa</label>
+                </div>
+                <div class="option-item">
+                    <input type="radio" id="paypalBtn" name="payment">
+                    <label for="paypalBtn">Paypal</label>
+                </div>
+                <div class="option-item">
+                    <input type="radio" id="paymeBtn" name="payment">
+                    <label for="paymeBtn">PayMe</label>
+                </div>
+            </div>
+        </div>
 
-    <p id="result-text-subscribe"></p>
-    <p id="result-text-payment"></p>
+        <button id="submitBtn">Submit</button>
+
+        <div class="results">
+            <p id="result-text-subscribe" class="result-text"></p>
+            <p id="result-text-payment" class="result-text"></p>
+        </div>
+    </div>
+
     <script src="./index.js"></script>
 </body>
 </html>
